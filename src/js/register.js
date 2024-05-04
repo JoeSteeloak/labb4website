@@ -1,16 +1,19 @@
 "use strict";
+console.log("JavaScript file loaded");
 
 let url = "http://127.0.0.1:3001/api/register" //URL till mitt API
 
 /* funktion för att läsa in datan i formuläret */
-const form = document.getElementById("registerForm");
-form.addEventListener('submit', (e) => {
+const registerBtnEl = document.getElementById("registerBtn");
+registerBtnEl.addEventListener('click', (e) => {
     e.preventDefault();
 
     let username = document.getElementById("username").value;
     let password = document.getElementById("password").value;
     let error = document.getElementById("error");
-    
+
+    console.log("hej");
+    return;
 
 
     if (username == "" || password == "") {
@@ -45,3 +48,9 @@ async function createUser(username, password) {
     function returnHome() {window.location.href = '/src/index.html'}; //skicka en tillbaka till startsidan
 }
 
+// back button
+const backBtnEl = document.getElementById("backBtn");
+backBtnEl.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.location.href = 'index.html';
+})
