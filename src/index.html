@@ -11,6 +11,13 @@
 <body>
     <header>
         <h1 class="whisper-regular">Curriculum Vitae</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Log in</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </nav>
     </header>
     <main>
         <p>Please enter your credentials</p>
@@ -18,15 +25,17 @@
             <form action="" id="loginForm">
                 <!-- Username -->
                 <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username"  maxlength="255"><br>
+                <input type="text" name="username" id="username" maxlength="255"><br>
                 <!-- Password -->
                 <label for="password">Password:</label><br>
-                <input type="text" name="password" id="password" maxlength="255"><br>
+                <input type="password" name="password" id="password" maxlength="255"><br>
                 <!-- log in-knapp -->
                 <input type="submit" id="loginBtn" value="Log in">
                 <!-- registrera-knapp -->
                 <input type="button" id="registerBtn" value="Register">
             </form>
+            <div id="error"></div>
+            <div id="success"></div>
         </div>
     </main>
 </body>
