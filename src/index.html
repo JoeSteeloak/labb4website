@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in</title>
+    <link rel="stylesheet" href="./css/styles.scss">
     <script type="module" src="./js/login.js"></script>
 </head>
 
 <body>
     <header>
-        <h1 class="whisper-regular">Curriculum Vitae</h1>
+        <h1>Curriculum Vitae</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Log in</a></li>
@@ -20,23 +21,22 @@
         </nav>
     </header>
     <main>
-        <p>Please enter your credentials</p>
-        <div class="formContainer">
-            <form action="" id="loginForm">
-                <!-- Username -->
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" maxlength="255"><br>
-                <!-- Password -->
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" maxlength="255"><br>
-                <!-- log in-knapp -->
-                <input type="submit" id="loginBtn" value="Log in">
-                <!-- registrera-knapp -->
-                <input type="button" id="registerBtn" value="Register">
-            </form>
-            <div id="error"></div>
-            <div id="success"></div>
+        <div class="login-page">
+            <div class="form">
+                <form action="" id="login" class="login-form">
+                    <!-- Username -->
+                    <input type="text" name="username" id="username" maxlength="255" placeholder="Username">
+                    <!-- Password -->
+                    <input type="password" name="password" id="password" maxlength="255" placeholder="Password">
+                    <!-- log in-knapp -->
+                    <input type="submit" id="loginBtn" class="button" value="LOGIN">
+                    <!-- registrera-knapp -->
+                    <input type="button" id="registerBtn" class="button" value="REGISTER">
+                </form>
+            </div>
         </div>
+        <div id="error"></div>
+        <div id="success"></div>
     </main>
 </body>
 

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="stylesheet" href="./css/styles.scss">
     <script type="module" src="./js/register.js"></script>
 </head>
 
@@ -20,23 +21,24 @@
         </nav>
     </header>
     <main>
-        <p>Create a new user</p>
-        <div class="formContainer">
-            <form action="" id="registerForm">
-                <!-- Username -->
-                <label for="username">Username:</label><br>
-                <input type="text" name="username" id="username" maxlength="255" minlength="4"><br>
-                <!-- Password -->
-                <label for="password">Password:</label><br>
-                <input type="text" name="password" id="password" maxlength="255" minlength="4"><br>
-                <!-- registreraknapp -->
-                <input type="button" id="registerBtn" value="Register">
-                <!-- avbrytknapp -->
-                <input type="button" id="backBtn" value="Back">
-            </form>
-            <div id="error"></div>
-            <div id="success"></div>
+        <div class="login-page">
+            <div class="form">
+                <form action="" id="registerForm" class="login-form">
+                    <!-- Username -->
+                    <input type="text" name="username" id="username" placeholder="Username" maxlength="255"
+                        minlength="4">
+                    <!-- Password -->
+                    <input type="password" name="password" id="password" placeholder="Password" maxlength="255"
+                        minlength="4">
+                    <!-- registreraknapp -->
+                    <input type="button" id="registerBtn" class="button" value="CREATE">
+                    <!-- avbrytknapp -->
+                    <input type="button" id="backBtn" class="button" value="BACK">
+                </form>
+            </div>
         </div>
+        <div id="error"></div>
+        <div id="success"></div>
     </main>
 </body>
 
