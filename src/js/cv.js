@@ -16,7 +16,7 @@ async function init() {
 
     if(data.message === "Skyddad route!") {
         const cv = document.getElementById("cv");
-        cv.innerHTML = `Welcome ${localStorage.username}!`
+        cv.innerHTML = `<h1> Welcome ${localStorage.username}! </h1>`;
     } else {
         window.location.href = 'index.html';
     }
